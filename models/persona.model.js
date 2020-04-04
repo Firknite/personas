@@ -19,7 +19,7 @@ const agregarPersonas = (persona) => {
 	return personas;
 };
 
-maxId = () => {
+const maxId = () => {
 	let maxId = 0;
 	personas.reduce((acc, act) => {
 		if (act.id > maxId) maxId = act.id;
