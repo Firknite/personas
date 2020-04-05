@@ -12,8 +12,7 @@
       "!**/*app.js",
       "!**/utils/**",
       "!**/providers/**",
-	  "!**/coverage/**",
-	  "!**/controller/**"
+      "!**/coverage/**"
     ]
   },
   "scripts": {
