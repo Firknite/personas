@@ -1,35 +1,36 @@
 {
-	"name": "api-basica",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"jest": {
-		"verbose": true,
-		"collectCoverageFrom": [
-			"**/*.{js,jsx}",
-			"!**/node_modules/**",
+  "name": "api-basica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "jest": {
+    "verbose": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
       "!**/vendor/**",
       "!**/*app.js",
       "!**/utils/**",
       "!**/providers/**",
-      "!**/coverage/**"
-		]
-	},
-	"scripts": {
-		"test": "jest",
+	  "!**/coverage/**",
+	  "!**/controller/**"
+    ]
+  },
+  "scripts": {
+    "test": "jest",
     "start": "nodemon app.js",
-    "coverage": "jest --coverage"    
-	},
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"body-parse": "^0.1.0",
-		"body-parser": "^1.19.0",
-		"cors": "^2.8.5",
-		"express": "^4.17.1",
-		"nodemon": "^2.0.2"
-	},
-	"devDependencies": {
-		"jest": "^25.2.7"
-	}
+    "coverage": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "jest": "^25.2.7"
+  }
 }
