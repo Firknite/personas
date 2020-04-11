@@ -7,10 +7,8 @@ var personas = [
   const listarPersonas = id => {
 	if (id !== undefined && id !== null) {
 	  const filtrado = personas.filter(persona => persona.id == id);
-	  console.log({filtrado});
 	  return filtrado;
 	} else {
-	  console.log({personas});
 	  return personas;
 	}
   };

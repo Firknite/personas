@@ -1,7 +1,7 @@
 const request = require("supertest");
 const app = require("../app");
 
-describe("Test de api", () => {
+describe("Test e2e", () => {
     test("prueba de metodo index principal", done => {
         request(app)
             .get("/")
