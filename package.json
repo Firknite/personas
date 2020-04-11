@@ -2,35 +2,34 @@
 	"name": "api-basica",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "server.js",
 	"jest": {
-	  "verbose": true,
-	  "collectCoverageFrom": [
-		"**/*.{js,jsx}",
-		"!**/node_modules/**",
-		"!**/vendor/**",
-		"!**/*app.js",
-		"!**/utils/**",
-		"!**/providers/**",
-		"!**/coverage/**",
-		"!server.js"
-	  ]
+		"verbose": true,
+		"collectCoverageFrom": [
+			"**/*.{js,jsx}",
+			"!**/node_modules/**",
+			"!**/vendor/**",
+			"!**/*app.js",
+			"!**/utils/**",
+			"!**/providers/**",
+			"!**/coverage/**",
+			"!server.js"
+		]
 	},
 	"scripts": {
-	  "test": "jest",
-	  "start": "nodemon server.js",
-	  "coverage": "jest --coverage"
+		"test": "jest",
+		"start": "nodemon server.js",
+		"coverage": "jest --coverage"
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-	  "body-parse": "^0.1.0",
-	  "body-parser": "^1.19.0",
-	  "cors": "^2.8.5",
-	  "express": "^4.17.1",
-	  "nodemon": "^2.0.2"
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1"
 	},
 	"devDependencies": {
-	  "jest": "^25.2.7"
+		"jest": "^25.2.7",
+		"nodemon": "^2.0.3"
 	}
 }
