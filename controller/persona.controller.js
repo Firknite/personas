@@ -17,7 +17,7 @@ rutas.get('/:id?', (req, res) => {
 rutas.post('/', (req, res) => {
     return formatoRespuesta(
 		true,
-		200,
+		201,
 		personaModel.agregarPersonas(req.body.persona),
 		true,
 		res

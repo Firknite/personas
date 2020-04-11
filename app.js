@@ -16,6 +16,4 @@ let rutas = require('./utils/rutas.utils');
 
 app.use(rutas);
 
-app.listen(3000, () => {
-	console.log('running in port 3000');
-});
+module.exports = app;
