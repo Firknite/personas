@@ -4,38 +4,32 @@
 	"description": "",
 	"main": "index.js",
 	"jest": {
-		"verbose": true,
-		"collectCoverageFrom": [
-			"**/*.{js,jsx}",
-			"!**/node_modules/**",
-			"!**/vendor/**",
-			"!**/*app.js",
-			"!**/utils/**",
-			"!**/providers/**",
-			"!**/coverage/**"
-		]
+	  "verbose": true,
+	  "collectCoverageFrom": [
+		"**/*.{js,jsx}",
+		"!**/node_modules/**",
+		"!**/vendor/**",
+		"!**/*app.js",
+		"!**/utils/**",
+		"!**/providers/**",
+		"!**/coverage/**"
+	  ]
 	},
 	"scripts": {
-		"test": "jest",
-		"e2e": "mocha ./test/e2e.js --timeout 10000",
-		"e2eReporte": "mocha ./test/e2e.js --timeout 10000 --reporter mochawesome --reporter-options charts=true",
-		"start": "nodemon app.js",
-		"coverage": "jest --coverage"
+	  "test": "jest",
+	  "start": "nodemon app.js",
+	  "coverage": "jest --coverage"
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"body-parse": "^0.1.0",
-		"body-parser": "^1.19.0",
-		"cors": "^2.8.5",
-		"express": "^4.17.1"
+	  "body-parse": "^0.1.0",
+	  "body-parser": "^1.19.0",
+	  "cors": "^2.8.5",
+	  "express": "^4.17.1",
+	  "nodemon": "^2.0.2"
 	},
 	"devDependencies": {
-		"jest": "^25.2.7",
-		"mocha": "^7.1.1",
-		"nodemon": "^2.0.2",
-		"should": "^13.2.3",
-		"supertest": "^4.0.2",
-		"mochawesome": "^5.0.0"
+	  "jest": "^25.2.7"
 	}
 }
